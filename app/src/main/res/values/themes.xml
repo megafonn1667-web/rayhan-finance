@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Rayhan" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#0E5A45</item>
+        <item name="android:navigationBarColor">#073D30</item>
+        <item name="android:statusBarColor">#073D30</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
