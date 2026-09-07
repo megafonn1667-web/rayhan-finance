@@ -1,0 +1,10 @@
+<resources>
+    <color name="green">#0E5A45</color>
+    <color name="green_dark">#073D30</color>
+    <color name="gold">#C9A24C</color>
+    <color name="bg">#F6F3EC</color>
+    <color name="text">#1E2723</color>
+    <color name="muted">#6F7773</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#B64242</color>
+</resources>
