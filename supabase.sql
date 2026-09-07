@@ -17,9 +17,11 @@ drop policy if exists "authenticated users manage operations" on public.operatio
 drop policy if exists "rayhan public read" on public.operations;
 drop policy if exists "rayhan public insert" on public.operations;
 drop policy if exists "rayhan public delete" on public.operations;
+drop policy if exists "users read own operations" on public.operations;
+drop policy if exists "users insert own operations" on public.operations;
+drop policy if exists "users update own operations" on public.operations;
+drop policy if exists "users delete own operations" on public.operations;
 
-authorization
--- Доступ только владельцу записи.
 create policy "users read own operations" on public.operations for select to authenticated
 using ((select auth.uid()) = user_id);
 create policy "users insert own operations" on public.operations for insert to authenticated
