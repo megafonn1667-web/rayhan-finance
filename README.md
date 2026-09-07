@@ -1,2 +1,0 @@
-# rayhan-finance
-создал
