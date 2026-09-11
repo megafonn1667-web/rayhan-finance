@@ -1,4 +1,4 @@
-name: Публикация РАЙХАН
+name: Публикация САБР
 
 on:
   push:
@@ -26,10 +26,12 @@ jobs:
           node-version: 20
       - name: Установка зависимостей
         run: npm install
+      - name: Настройка GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Сборка сайта
         run: npm run build
       - name: Загрузка сайта
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
